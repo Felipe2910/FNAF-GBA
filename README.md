@@ -21,25 +21,25 @@ Port/demake fiel al original de Scott Cawthon para hardware GBA (240×160, 60 FP
 
 | Módulo | Estado |
 |--------|--------|
-| Animatrónicos principales (Bonnie, Chica, Foxy, Freddy) | [x] Completo |
-| Sistema de energía con drenaje por noche y multiplicadores | [x] Completo |
-| Noches 1–6 con tabla de dificultad AI | [x] Completo |
-| Noche Personalizada (niveles 0–20 por animatrónico) | [x] Completo |
-| Oficina con scroll horizontal izquierda/centro/derecha | [x] Completo |
-| Menú principal con efectos de fondo, flicker y ruido estático | [x] Completo |
-| Pantalla de intro (logo Felip Games Studio) | [x] Completo |
-| Pantalla de periódico | [x] Completo |
-| Pantallas de fin de noche (Win / Game Over) | [x] Completo |
-| HUD (energía, barra de uso, hora, número de noche) | [x] Completo |
-| Sistema de guardado SRAM con checksum XOR | [x] Completo |
-| Transición Fade (negro ↔ pantalla) | [x] Completo |
-| Audio (.it tracks vía MaxMod) | [x] Completo |
-| Sistema de cámaras (mapa + vista interactiva) | [ ] WIP — estructura vacía |
-| Puertas y luces renderizadas en la oficina | [ ] WIP — headers stub |
-| Golden Freddy | [ ] WIP — placeholder vacío |
-| Audio Manager (capa de abstracción de sonido) | [ ] WIP — vacío |
-| Cola de eventos (`event_queue.h`) | [ ] WIP — vacío |
-| Sistema de progresión/logros (`progression.h`) | [ ] WIP — vacío |
+| Animatrónicos principales (Bonnie, Chica, Foxy, Freddy) | ✅ Completo |
+| Sistema de energía con drenaje por noche y multiplicadores | ✅ Completo |
+| Noches 1–6 con tabla de dificultad AI | ✅ Completo |
+| Noche Personalizada (niveles 0–20 por animatrónico) | ✅ Completo |
+| Oficina con scroll horizontal izquierda/centro/derecha | ✅ Completo |
+| Menú principal con efectos de fondo, flicker y ruido estático | ✅ Completo |
+| Pantalla de intro (logo Felip Games Studio) | ✅ Completo |
+| Pantalla de periódico | ✅ Completo |
+| Pantallas de fin de noche (Win / Game Over) | ✅ Completo |
+| HUD (energía, barra de uso, hora, número de noche) | ✅ Completo |
+| Sistema de guardado SRAM con checksum XOR | ✅ Completo |
+| Transición Fade (negro ↔ pantalla) | ✅ Completo |
+| Audio (.it tracks vía MaxMod) | ✅ Completo |
+| Sistema de cámaras (mapa + vista interactiva) | 🚧 WIP — estructura vacía |
+| Puertas y luces renderizadas en la oficina | 🚧 WIP — headers stub |
+| Golden Freddy | 🚧 WIP — placeholder vacío |
+| Audio Manager (capa de abstracción de sonido) | 🚧 WIP — vacío |
+| Cola de eventos (`event_queue.h`) | 🚧 WIP — vacío |
+| Sistema de progresión/logros (`progression.h`) | 🚧 WIP — vacío |
 
 ---
 
@@ -210,12 +210,12 @@ El `.gba` generado puede ejecutarse en mGBA (recomendado) o en hardware real con
 
 ## Próximos pasos (WIP prioritario)
 
-1. [ ] **Sistema de cámaras** — implementar `CameraScreen` y `camera_map.h`: navegación entre cámaras y renderizado de la posición de cada animatrónico.
-2. [ ] **Puertas y luces renderizadas** — completar `Doors` y `Lights` para mostrar su estado visualmente en la oficina.
-3. [ ] **Audio Manager** — capa de abstracción sobre MaxMod para gestionar transiciones de música y efectos de sonido (Toreador March del Power Out de Freddy, jumpscares, etc.).
-4. [ ] **Golden Freddy** — aparición aleatoria como easter egg al mirar a cámara 1A bajo condiciones especiales.
-5. [ ] **Sistema de progresión** — guardar estrellas y desbloquear la Custom Night al completar la noche 5.
-6. [ ] **Cola de eventos** — desacoplar la comunicación entre animatrónicos, juego y audio mediante `event_queue.h`.
+1. **Sistema de cámaras** — implementar `CameraScreen` y `camera_map.h`: navegación entre cámaras y renderizado de la posición de cada animatrónico.
+2. **Puertas y luces renderizadas** — completar `Doors` y `Lights` para mostrar su estado visualmente en la oficina.
+3. **Audio Manager** — capa de abstracción sobre MaxMod para gestionar transiciones de música y efectos de sonido (Toreador March del Power Out de Freddy, jumpscares, etc.).
+4. **Golden Freddy** — aparición aleatoria como easter egg al mirar a cámara 1A bajo condiciones especiales.
+5. **Sistema de progresión** — guardar estrellas y desbloquear la Custom Night al completar la noche 5.
+6. **Cola de eventos** — desacoplar la comunicación entre animatrónicos, juego y audio mediante `event_queue.h`.
 
 ---
 
