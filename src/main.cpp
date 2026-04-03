@@ -1,6 +1,7 @@
 #include "bn_core.h"
 
 #include "screens/intro_screen.h"
+#include "screens/trailer_screen.h"
 #include "screens/newspaper_screen.h"
 #include "screens/menu/main_menu.h"
 #include "screens/menu/custom_menu.h"
@@ -51,6 +52,7 @@ int main()
     ScreenManager screen_manager;
 
     IntroScreen intro_screen;
+    TrailerScreen trailer_screen;
     NewspaperScreen newspaper_screen;
 
     MainMenu main_menu(menu_context);
@@ -62,6 +64,7 @@ int main()
     GameOverScreen gameover_screen;
 
     screen_manager.register_screen(Screen::INTRO, &intro_screen);
+    screen_manager.register_screen(Screen::TRAILER, &trailer_screen);
     screen_manager.register_screen(Screen::NEWSPAPER, &newspaper_screen);
     screen_manager.register_screen(Screen::MAIN_MENU, &main_menu);
     screen_manager.register_screen(Screen::CUSTOM_MENU, &custom_menu);

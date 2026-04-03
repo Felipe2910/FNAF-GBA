@@ -31,7 +31,7 @@
 #
 # All directories are specified relative to the project directory where the makefile is found.
 #---------------------------------------------------------------------------------------------------------------------
-TARGET      	:=  $(notdir $(CURDIR))
+TARGET      	:=  Five_Nights_at_Freddys
 BUILD       	:=  build
 LIBBUTANO   	:=  ../butano
 PYTHON      	:=  python
@@ -55,8 +55,8 @@ AUDIOBACKEND	:=  maxmod
 AUDIOTOOL		:=  
 DMGAUDIO    	:=  dmg_audio
 DMGAUDIOBACKEND	:=  default
-ROMTITLE    	:=  Five Nights at Freddy's
-ROMCODE     	:=  SBTP
+ROMTITLE    	:=  FIVE NIGHTS
+ROMCODE     	:=  FNAF
 USERFLAGS   	:=  
 USERCXXFLAGS	:=  
 USERASFLAGS 	:=  

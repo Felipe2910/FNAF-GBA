@@ -1,0 +1,21 @@
+# Build output
+/build/
+/FNAF.elf
+/FNAF.gba
+/FNAF.sav
+/FNAF.avi
+
+# VSCode — ignorar overrides locales, mantener c_cpp_properties.json
+.vscode/settings.json
+.vscode/*_old.json
+
+# Assets binarios del trailer (346 archivos, demasiado pesados para el repo)
+graphics/trailer_*.bmp
+graphics/trailer_*.json
+
+# Respaldos de audio
+audio/*.bak
+
+# OS
+.DS_Store
+Thumbs.db

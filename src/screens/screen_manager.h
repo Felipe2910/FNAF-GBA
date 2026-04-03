@@ -9,6 +9,7 @@ enum class Screen
 {
     NONE,
     INTRO,
+    TRAILER,
     MAIN_MENU,
     CUSTOM_MENU,
     NEWSPAPER,
